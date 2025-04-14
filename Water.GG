@@ -28,7 +28,7 @@ local LeftGroupBox = Tabs.Main:AddLeftGroupbox('CamLock & Slient aim')
 LeftGroupBox:AddToggle('CamLock', {
    Text = 'CamLock (C)',
    Default = false, -- Default value (true / false)
-   Tooltip = '', -- Information shown when you hover over the toggle
+   Tooltip = 'When you click (C) it locks onto the person!', -- Information shown when you hover over the toggle
    Callback = function(Value)
 -- StarterPlayerScripts > LocalScript
 
@@ -348,6 +348,7 @@ local PlayerGroupBox = Tabs.Player:AddLeftGroupbox("Player Settings")
 PlayerGroupBox:AddToggle("PlayerToggle", {
    Text = "Fly (F)",
    Default = false,
+   Tooltip = "Makes you Fly like a bird!",
    Callback = function(Value)
       local player = game.Players.LocalPlayer
       local character = player.Character or player.CharacterAdded:Wait()
